@@ -14,7 +14,7 @@ The general format :
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 #Links
-[Install Terraform in Linux](https://developer.hashicorp.com/terraform/downloads)
-[Make a bah script executable](https://en.wikipedia.org/wiki/Shebang_(Unix))
-[Check Linux Version](https://www.codingninjas.com/studio/library/how-to-check-os-version-in-linux)
-[Linux File Permissions](https://en.wikipedia.org/wiki/Chmod)
+- [Install Terraform in Linux](https://developer.hashicorp.com/terraform/downloads)
+- [Make a bah script executable](https://en.wikipedia.org/wiki/Shebang_(Unix))
+- [Check Linux Version](https://www.codingninjas.com/studio/library/how-to-check-os-version-in-linux)
+- [Linux File Permissions](https://en.wikipedia.org/wiki/Chmod)

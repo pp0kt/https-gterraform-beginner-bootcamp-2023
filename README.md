@@ -45,3 +45,28 @@ We can persist env vars in GITPOD be storing them in GitPod secrets storage.
 gp env HELLO=`world`
 ```
 
+### Installing AWS Client
+
+We need AWS CLI for this project via [`./bin/install_aws_cli`](./bin/install_aws_cli)
+
+
+[Installing AWS Client for Linux](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+### Find information about the logged in AWS user
+```aws sts get-caller-identity```
+
+On success a Json payload will return, similar to this:
+
+```json
+get-caller-identity
+{
+    "UserId": "AIDAR5LNEMXMIK76QRRNR",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::123456789012:user/terraform-bootcamp"
+}
+```
+These credentials need to be generated from IAM user 
+### Setting AWS env vars
+
+
+

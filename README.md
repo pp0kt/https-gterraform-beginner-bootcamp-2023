@@ -12,3 +12,9 @@ The general format :
 - **MINOR** version when you add functionality in a backward compatible manner
 - **PATCH** version when you make backward compatible bug fixes
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+#Links
+[Install Terraform in Linux](https://developer.hashicorp.com/terraform/downloads)
+[Make a bah script executable](https://en.wikipedia.org/wiki/Shebang_(Unix))
+[Check Linux Version](https://www.codingninjas.com/studio/library/how-to-check-os-version-in-linux)
+[Linux File Permissions](https://en.wikipedia.org/wiki/Chmod)

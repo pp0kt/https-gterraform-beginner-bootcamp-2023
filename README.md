@@ -70,3 +70,44 @@ These credentials need to be generated from IAM user
 
 
 
+## Terraform Basics
+
+Terraform sources their providers and modules from the Terraform registry which is location at [registry.terrafom.io] (https://registry.terraform.io/)
+
+- **Providers** is an interface to APIs that will allow you to create resources in terraform.
+[Providers](https://registry.terraform.io/browse/providers)
+We used:  [Random](https://registry.terraform.io/providers/hashicorp/random/3.5.1)
+- **Modules** are a way to refactor or make large amounts of code re-usable.
+
+
+### Terraform Console
+
+We can see a list of all the Terraform commands from simply typeing 'terrafom' from the terminal prompt. This is irrespective of the bash process you use.
+
+#### Terraform init
+
+The the start of a new terraform project we will run `terrafom init` to download the binaries that we will be using in the project
+
+#### Terraform Plan
+
+This will generate out a changeset , about the state of our infrastructure and what will be changed.  
+
+#### Terraform Apply
+
+This will run a plan and pass the change set  ie 'plan' to be applied.  There will be a yes/no prompt, to auto approve the use: `terraform apply --auto-approve`
+
+#### Terrafom lock files
+
+`.terraform.lock.hcl` contains the versioning for the providers or modules in in use on the project
+Should eb commited to version control system 
+
+### Terraform state files
+
+`.terraform.tfstate` contains information about the current state of your infrastructure
+This file **should not** be committed to version control.  This will contain sensitive data.
+
+`.terraform.tfstate.backup` is the previous version
+
+#### Terraform Directory
+
+`.terraform` directory contains binaries of terrafom providers.

@@ -1,5 +1,19 @@
 # this is my first comment that I'm going to commit
 terraform {
+   #backend "remote" {
+  #  hostname = "app.terraform.io"
+  #  organization = "pp0kt"
+
+  #  workspaces {
+  #    name = "terra-house-1"
+  #  }
+  #}
+  cloud {
+    organization = "pp0kt"
+    workspaces {
+      name = "terra-house-pp"
+    }
+  }
   required_providers {
     random = {
       source = "hashicorp/random"

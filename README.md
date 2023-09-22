@@ -115,3 +115,18 @@ This file **should not** be committed to version control.  This will contain sen
 #### Terraform Directory
 
 `.terraform` directory contains binaries of terrafom providers.
+
+#### Terraform Login and Gitpod workspace
+
+It's whack.  Pretty broken, `terraform login` will produce a wysiwig screen.  Press P.  Follow the link and then copy the api token.
+
+Choose the option to print to screen.  When you q out you should be able to paste (work 33% of time)
+You can touch and open /home/gitpod/.terraform.d/credentials.tfrc.json format:
+
+`{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOurToken"
+    }
+  }
+}`

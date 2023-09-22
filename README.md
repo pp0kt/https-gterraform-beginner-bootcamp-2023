@@ -96,12 +96,16 @@ This will generate out a changeset , about the state of our infrastructure and w
 
 This will run a plan and pass the change set  ie 'plan' to be applied.  There will be a yes/no prompt, to auto approve the use: `terraform apply --auto-approve`
 
+#### Terraform Destroy 
+
+This will destroy resources.
+
 #### Terrafom lock files
 
 `.terraform.lock.hcl` contains the versioning for the providers or modules in in use on the project
 Should eb commited to version control system 
 
-### Terraform state files
+#### Terraform state files
 
 `.terraform.tfstate` contains information about the current state of your infrastructure
 This file **should not** be committed to version control.  This will contain sensitive data.

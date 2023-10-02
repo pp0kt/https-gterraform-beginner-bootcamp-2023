@@ -91,4 +91,25 @@ Our root module strcuture is as follows:
 
   - 
 [Standard Module Structrue](https://developer.hashicorp.com/terraform/language/modules/develop/structure)
+
+## Dealing with configuration drift
+
+## What happens if we lose our state file?
+
+If we lose our statefile, we will most likely have to tear down all our cloud infrastructure manually. 
+
+You can use terraform port but it will not work for all cloud resources.  We may need t check the terraform providers documentation.
+
+### Fix Missing Resources with Terraform Import
+
+`terraform import aws_s3_bucket.bucket bucket-name`
+
+[Terraform Import](https://developer.hashicorp.com/terraform/cli/import/usage)
+[AWS S3 Bucket Import from Terrafom](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import)
+
+
+### Fix manual configuration
+
+If someone deletes or modifies cloud resources manually terraform plan will attempt to return infrastructure back to previous state thus fixing Configuration drift.
+
 >>>>>>> main
